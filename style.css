@@ -1,0 +1,160 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  background: #f0fdf4;
+  color: #333;
+}
+
+header {
+  background: linear-gradient(135deg, #2e7d32, #81c784);
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.2rem;
+}
+
+header p {
+  margin: 5px 0 0;
+  font-size: 1rem;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background: #4caf50;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: white;
+  padding: 12px 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s;
+  margin: 5px;
+}
+
+nav a:hover {
+  background: #388e3c;
+}
+
+nav a.tombol-laporan {
+  background: #1b5e20;
+  border-radius: 8px;
+}
+
+section {
+  padding: 25px;
+  max-width: 950px;
+  margin: 20px auto;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+}
+
+h2 {
+  color: #2e7d32;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.jadwal {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 18px;
+}
+
+.jadwal div {
+  background: #e8f5e9;
+  padding: 18px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.jadwal div:hover {
+  transform: translateY(-4px);
+}
+
+.jadwal i {
+  color: #388e3c;
+  margin-bottom: 6px;
+  display: block;
+  font-size: 1.3rem;
+}
+
+.kegiatan ul {
+  list-style: none;
+  padding: 0;
+}
+
+.kegiatan li {
+  background: #f1f8f3;
+  margin: 10px 0;
+  padding: 15px 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: transform 0.2s;
+}
+
+.kegiatan li:hover {
+  transform: translateX(5px);
+}
+
+.kegiatan i {
+  color: #2e7d32;
+  font-size: 1.2rem;
+}
+
+.donasi-form input, .donasi-form textarea, .donasi-form button {
+  width: 100%;
+  padding: 14px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+.donasi-form button {
+  background: #2e7d32;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.donasi-form button:hover {
+  background: #1b5e20;
+  transform: scale(1.05);
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #2e7d32;
+  color: white;
+  margin-top: 25px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+@media (max-width: 600px) {
+  nav a {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+}
